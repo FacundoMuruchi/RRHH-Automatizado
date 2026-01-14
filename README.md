@@ -201,3 +201,9 @@ Este workflow está diseñado como **prototipo funcional realista**, aplicando b
 * Integración con IA
 * Human-in-the-loop
 * Separación de responsabilidades
+
+---
+
+## 9. Explicación a detalle del workflow (Inglés)
+
+https://www.notion.so/HR-Applicant-Management-Automation-with-n8n-2e78d5dc55c2801dbda7eba57348a2a4?source=copy_link
