@@ -1,4 +1,4 @@
-# HR Applicant Management Automation – Reproducible Tests
+# Automatización de gestor de RRHH
 
 Este documento describe **cómo ejecutar pruebas reproducibles** del workflow de automatización de gestión de candidatos desarrollado con **n8n**.
 
