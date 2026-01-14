@@ -174,18 +174,7 @@ Motivación: "Quiero plata"
 
 ---
 
-## 8. Reproducibilidad
-
-Para garantizar resultados reproducibles:
-
-* Usar siempre los mismos textos de motivación
-* Ejecutar en modo manual
-* No modificar prompts de IA entre pruebas
-* Limpiar Google Sheets antes de cada corrida
-
----
-
-## 9. Notas finales
+## 8. Notas finales
 
 Este workflow está diseñado como **prototipo funcional realista**, aplicando buenas prácticas de:
 
