@@ -1,0 +1,1284 @@
+{
+  "name": "RRHH automatizado",
+  "nodes": [
+    {
+      "parameters": {
+        "sendTo": "={{ $('datos').item.json.correo }}",
+        "subject": "=Tu solicitud ha sido recibida!",
+        "message": "=<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html><head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><link rel=\"preload\" as=\"image\" href=\"{{ $('recibido').item.json.imagen_recibido }}\"><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta name=\"format-detection\" content=\"telephone=no, date=no, address=no, email=no\"><meta name=\"x-apple-disable-message-reformatting\"><meta name=\"keywords\" content=\"DAG97z6f7FI, BAFHLt-Bzcs\"><!--[if mso]><div>\n                <noscript>\n                  <xml>\n                    <o:OfficeDocumentSettings>\n                      <o:AllowPNG/>\n                      <o:PixelsPerInch>96</o:PixelsPerInch>\n                    </o:OfficeDocumentSettings>\n                  </xml>\n                </noscript></div><![endif]--><!--[if !mso]><!--><style>@media (max-width: 450px) {\n        .layout-0 {\n          display: none !important;\n        }\n      }\n@media (max-width: 450px) and (min-width: 0px) {\n        .layout-0-under-450 {\n          display: table !important;\n        }\n      }</style><!--<![endif]--></head><body style=\"width:100%;-webkit-text-size-adjust:100%;text-size-adjust:100%;background-color:#f0f1f5;margin:0;padding:0\"><table width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" bgcolor=\"#f0f1f5\" style=\"background-color:#f0f1f5\"><tbody><tr><td style=\"background-color:#f0f1f5\"><!--[if mso]><center>\n                    <table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"600\">\n                      <tbody>\n                        <tr>\n                          <td><![endif]--><table align=\"center\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"max-width:600px;min-height:600px;margin:0 auto;background-color:#feffff\"><tbody><tr><td style=\"vertical-align:top\"></td></tr><tr><td style=\"vertical-align:top;padding:10px\n           0px\n           0px\n           0px\"><table align=\"center\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\"><tbody><tr><td style=\"padding:10px 0 10px 0;vertical-align:top\"><table align=\"center\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"color:#000;font-style:normal;font-weight:normal;font-size:16px;line-height:1.4;letter-spacing:0;text-align:left;direction:ltr;border-collapse:collapse;font-family:Arial, Helvetica, sans-serif;white-space:normal;word-wrap:break-word;word-break:break-word\"><tbody><tr><td><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:100%\"><tbody><tr><td align=\"center\"><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:100%;max-width:600px\"><tbody><tr><td style=\"width:100%;padding:0\"><img src=\"{{ $('recibido').item.json.imagen_recibido }}\" width=\"600\" height=\"630\" style=\"display:block;width:100%;height:auto;max-width:100%\"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td style=\"font-size:0;height:16px\" height=\"16\">&nbsp;</td></tr><tr><td dir=\"ltr\" style=\"font-size:16px;white-space:pre-wrap;text-align:left;padding:0px 20px\">{{ $json.candidates[0].content.parts[0].text }}\n<br></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td height=\"100%\" style=\"height:100%;font-size:0;line-height:0\" aria-hidden=\"true\">&nbsp;</td></tr><tr><td style=\"vertical-align:top\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"layout-0\" align=\"center\" style=\"display:table;border-spacing:0px;border-collapse:separate;width:100%;max-width:100%;table-layout:fixed;margin:0 auto;background-color:#000000\"><tbody><tr><td style=\"text-align:center;padding:24.5px 0px\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border-spacing:0px;border-collapse:separate;width:100%;max-width:600px;table-layout:fixed;margin:0 auto\"><tbody><tr><td width=\"40.71%\" style=\"width:40.71%;box-sizing:border-box;vertical-align:top\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border-spacing:0px;border-collapse:separate;width:100%;table-layout:fixed\"><tbody><tr><td style=\"padding:25px\"><table align=\"center\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"color:#000;font-style:normal;font-weight:normal;font-size:16px;line-height:1.4;letter-spacing:0;text-align:left;direction:ltr;border-collapse:collapse;font-family:Arial, Helvetica, sans-serif;white-space:normal;word-wrap:break-word;word-break:break-word\"><tbody><tr><td dir=\"ltr\" style=\"color:#feffff;font-size:17.3334px;font-weight:700;white-space:pre-wrap;text-align:left\">AUTO INC.<br></td></tr></tbody></table></td></tr></tbody></table></td><td width=\"16\" style=\"width:16px;box-sizing:border-box;font-size:0\">&nbsp;</td><td width=\"56.62%\" style=\"width:56.62%;box-sizing:border-box;vertical-align:top\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border-spacing:0px;border-collapse:separate;width:100%;table-layout:fixed\"><tbody><tr><td style=\"padding:25px\"><table align=\"center\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"color:#000;font-style:normal;font-weight:normal;font-size:16px;line-height:1.4;letter-spacing:0;text-align:left;direction:ltr;border-collapse:collapse;font-family:Arial, Helvetica, sans-serif;white-space:normal;word-wrap:break-word;word-break:break-word\"><tbody><tr><td dir=\"ltr\" style=\"color:#feffff;font-size:12px;white-space:pre-wrap;text-align:justify\"><a href=\"tel:012312345678\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#feffff;text-decoration:none\">0123 123 456 78</a><br>h<a href=\"mailto:allo@autoinc.com\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#feffff;text-decoration:none\">allo@autoinc.com</a><br>www.<a href=\"http://autoinc.de\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#feffff;text-decoration:none\">autoinc.de</a><br></td></tr><tr><td style=\"font-size:0;height:16px\" height=\"16\">&nbsp;</td></tr><tr><td dir=\"ltr\" style=\"color:#feffff;font-size:12px;letter-spacing:-0.025em;white-space:pre-wrap;text-align:left\">© 2026 Facundo Muruchi<br></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table><!--[if !mso]><!--><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"layout-0-under-450\" align=\"center\" style=\"display:none;border-spacing:0px;border-collapse:separate;width:100%;max-width:100%;table-layout:fixed;margin:0 auto;background-color:#000000\"><tbody><tr><td style=\"text-align:center;padding:24.5px 0px\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border-spacing:0px;border-collapse:separate;width:100%;max-width:490px;table-layout:fixed;margin:0 auto\"><tbody><tr><td width=\"40.46%\" style=\"width:40.46%;box-sizing:border-box;vertical-align:top\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border-spacing:0px;border-collapse:separate;width:100%;table-layout:fixed\"><tbody><tr><td style=\"padding:25px\"><table align=\"center\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"color:#000;font-style:normal;font-weight:normal;font-size:16px;line-height:1.4;letter-spacing:0;text-align:left;direction:ltr;border-collapse:collapse;font-family:Arial, Helvetica, sans-serif;white-space:normal;word-wrap:break-word;word-break:break-word\"><tbody><tr><td dir=\"ltr\" style=\"color:#feffff;font-size:17.3334px;font-weight:700;white-space:pre-wrap;text-align:left\">AUTO INC.<br></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td style=\"font-size:0;height:16px\" height=\"16\">&nbsp;</td></tr><tr><td width=\"56.28%\" style=\"width:56.28%;box-sizing:border-box;vertical-align:top\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border-spacing:0px;border-collapse:separate;width:100%;table-layout:fixed\"><tbody><tr><td style=\"padding:25px\"><table align=\"center\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"color:#000;font-style:normal;font-weight:normal;font-size:16px;line-height:1.4;letter-spacing:0;text-align:left;direction:ltr;border-collapse:collapse;font-family:Arial, Helvetica, sans-serif;white-space:normal;word-wrap:break-word;word-break:break-word\"><tbody><tr><td dir=\"ltr\" style=\"color:#feffff;font-size:12px;white-space:pre-wrap;text-align:justify\"><a href=\"tel:012312345678\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#feffff;text-decoration:none\">0123 123 456 78</a><br>h<a href=\"mailto:allo@autoinc.com\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#feffff;text-decoration:none\">allo@autoinc.com</a><br>www.<a href=\"http://autoinc.de\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#feffff;text-decoration:none\">autoinc.de</a><br></td></tr><tr><td style=\"font-size:0;height:16px\" height=\"16\">&nbsp;</td></tr><tr><td dir=\"ltr\" style=\"color:#feffff;font-size:12px;letter-spacing:-0.025em;white-space:pre-wrap;text-align:left\">© 2026 Facundo Muruchi<br></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table><!--<![endif]--></td></tr></tbody></table><!--[if mso]></td>\n                </tr>\n              </tbody>\n            </table>\n          </center><![endif]--></td></tr></tbody></table></body></html>",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        1712,
+        432
+      ],
+      "id": "f571e08f-69e3-447b-8a5c-29a1ab876ad4",
+      "name": "enviar recibido a aplicante",
+      "webhookId": "4b0eb6b5-eeb9-48c8-9bd5-52460ded5b6e",
+      "executeOnce": true,
+      "notesInFlow": false,
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "uZ1VZHYzFi3UNg2j",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sendTo": "facundomuruchi01@gmail.com",
+        "subject": "Nueva Aplicación de Automatización!",
+        "emailType": "text",
+        "message": "=🧑 Nombre completo: {{ $('datos').item.json.nombre }} {{ $('datos').item.json.apellido }}\n\n🙌 Edad: {{ $('datos').item.json.edad }}\n\n✉️ Email: {{ $('datos').item.json.correo }}\n\n✅ Tiene experiencia en automatización\n\n💪 Motivación: {{ $('datos').item.json.motivacion }}\n\n🕒 Fecha de envío: {{ $('obtener fecha').item.json.currentDate }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        2384,
+        288
+      ],
+      "id": "914f8dc3-712f-4eeb-b21e-e1a349df72de",
+      "name": "enviar info a RRHH",
+      "webhookId": "8d878bd9-2667-4327-9b61-77cf59d63cc3",
+      "executeOnce": true,
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "uZ1VZHYzFi3UNg2j",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "formId": "yJzF5lP3"
+      },
+      "type": "n8n-nodes-base.typeformTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -784,
+        432
+      ],
+      "id": "6373eb4a-586c-4d3a-b489-656a88e2e611",
+      "name": "Obtener datos",
+      "webhookId": "034f4567-dfd3-4a9e-bf7f-4509bc43109a",
+      "credentials": {
+        "typeformApi": {
+          "id": "JfmlN5MSq7ogvHKt",
+          "name": "Typeform account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sendTo": "={{ $('datos').item.json.correo }}",
+        "subject": "Resultado de Aplicación",
+        "message": "=<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html><head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><link rel=\"preload\" as=\"image\" href=\"{{ $('rechazo').item.json.imagen_rechazo }}\"><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta name=\"format-detection\" content=\"telephone=no, date=no, address=no, email=no\"><meta name=\"x-apple-disable-message-reformatting\"><meta name=\"keywords\" content=\"DAG97z6f7FI, BAFHLt-Bzcs\"><!--[if mso]><div>\n                <noscript>\n                  <xml>\n                    <o:OfficeDocumentSettings>\n                      <o:AllowPNG/>\n                      <o:PixelsPerInch>96</o:PixelsPerInch>\n                    </o:OfficeDocumentSettings>\n                  </xml>\n                </noscript></div><![endif]--><!--[if !mso]><!--><style>@media (max-width: 450px) {\n        .layout-0 {\n          display: none !important;\n        }\n      }\n@media (max-width: 450px) and (min-width: 0px) {\n        .layout-0-under-450 {\n          display: table !important;\n        }\n      }</style><!--<![endif]--></head><body style=\"width:100%;-webkit-text-size-adjust:100%;text-size-adjust:100%;background-color:#f0f1f5;margin:0;padding:0\"><table width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" bgcolor=\"#f0f1f5\" style=\"background-color:#f0f1f5\"><tbody><tr><td style=\"background-color:#f0f1f5\"><!--[if mso]><center>\n                    <table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"600\">\n                      <tbody>\n                        <tr>\n             \n<td><![endif]--><table align=\"center\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"max-width:600px;min-height:600px;margin:0 auto;background-color:#feffff\"><tbody><tr><td style=\"vertical-align:top\"></td></tr><tr><td style=\"vertical-align:top;padding:10px\n           0px\n           0px\n           0px\"><table align=\"center\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\"><tbody><tr><td style=\"padding:10px 0 10px 0;vertical-align:top\"><table align=\"center\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"color:#000;font-style:normal;font-weight:normal;font-size:16px;line-height:1.4;letter-spacing:0;text-align:left;direction:ltr;border-collapse:collapse;font-family:Arial, Helvetica, sans-serif;white-space:normal;word-wrap:break-word;word-break:break-word\"><tbody><tr><td><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:100%\"><tbody><tr><td align=\"center\"><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:100%;max-width:600px\"><tbody><tr><td style=\"width:100%;padding:0\"><img src=\"{{ $('rechazo').item.json.imagen_rechazo }}\" width=\"600\" height=\"630\" style=\"display:block;width:100%;height:auto;max-width:100%\"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td style=\"font-size:0;height:16px\" height=\"16\">&nbsp;</td></tr><tr><td dir=\"ltr\" style=\"font-size:16px;white-space:pre-wrap;text-align:left;padding:0px 20px\">{{ $json.candidates[0].content.parts[0].text }}\n<br></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td height=\"100%\" style=\"height:100%;font-size:0;line-height:0\" aria-hidden=\"true\">&nbsp;</td></tr><tr><td style=\"vertical-align:top\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"layout-0\" align=\"center\" style=\"display:table;border-spacing:0px;border-collapse:separate;width:100%;max-width:100%;table-layout:fixed;margin:0 auto;background-color:#000000\"><tbody><tr><td style=\"text-align:center;padding:24.5px 0px\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border-spacing:0px;border-collapse:separate;width:100%;max-width:600px;table-layout:fixed;margin:0 auto\"><tbody><tr><td width=\"40.71%\" style=\"width:40.71%;box-sizing:border-box;vertical-align:top\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border-spacing:0px;border-collapse:separate;width:100%;table-layout:fixed\"><tbody><tr><td style=\"padding:25px\"><table align=\"center\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"color:#000;font-style:normal;font-weight:normal;font-size:16px;line-height:1.4;letter-spacing:0;text-align:left;direction:ltr;border-collapse:collapse;font-family:Arial, Helvetica, sans-serif;white-space:normal;word-wrap:break-word;word-break:break-word\"><tbody><tr><td dir=\"ltr\" style=\"color:#feffff;font-size:17.3334px;font-weight:700;white-space:pre-wrap;text-align:left\">AUTO INC.<br></td></tr></tbody></table></td></tr></tbody></table></td><td width=\"16\" style=\"width:16px;box-sizing:border-box;font-size:0\">&nbsp;</td><td width=\"56.62%\" style=\"width:56.62%;box-sizing:border-box;vertical-align:top\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border-spacing:0px;border-collapse:separate;width:100%;table-layout:fixed\"><tbody><tr><td style=\"padding:25px\"><table align=\"center\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"color:#000;font-style:normal;font-weight:normal;font-size:16px;line-height:1.4;letter-spacing:0;text-align:left;direction:ltr;border-collapse:collapse;font-family:Arial, Helvetica, sans-serif;white-space:normal;word-wrap:break-word;word-break:break-word\"><tbody><tr><td dir=\"ltr\" style=\"color:#feffff;font-size:12px;white-space:pre-wrap;text-align:justify\"><a href=\"tel:012312345678\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#feffff;text-decoration:none\">0123 123 456 78</a><br>h<a href=\"mailto:allo@autoinc.com\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#feffff;text-decoration:none\">allo@autoinc.com</a><br>www.<a href=\"http://autoinc.de\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#feffff;text-decoration:none\">autoinc.de</a><br></td></tr><tr><td style=\"font-size:0;height:16px\" height=\"16\">&nbsp;</td></tr><tr><td dir=\"ltr\" style=\"color:#feffff;font-size:12px;letter-spacing:-0.025em;white-space:pre-wrap;text-align:left\">© 2026 Facundo Muruchi<br></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table><!--[if !mso]><!--><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"layout-0-under-450\" align=\"center\" style=\"display:none;border-spacing:0px;border-collapse:separate;width:100%;max-width:100%;table-layout:fixed;margin:0 auto;background-color:#000000\"><tbody><tr><td style=\"text-align:center;padding:24.5px 0px\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border-spacing:0px;border-collapse:separate;width:100%;max-width:490px;table-layout:fixed;margin:0 auto\"><tbody><tr><td width=\"40.46%\" style=\"width:40.46%;box-sizing:border-box;vertical-align:top\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border-spacing:0px;border-collapse:separate;width:100%;table-layout:fixed\"><tbody><tr><td style=\"padding:25px\"><table align=\"center\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"color:#000;font-style:normal;font-weight:normal;font-size:16px;line-height:1.4;letter-spacing:0;text-align:left;direction:ltr;border-collapse:collapse;font-family:Arial, Helvetica, sans-serif;white-space:normal;word-wrap:break-word;word-break:break-word\"><tbody><tr><td dir=\"ltr\" style=\"color:#feffff;font-size:17.3334px;font-weight:700;white-space:pre-wrap;text-align:left\">AUTO INC.<br></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td style=\"font-size:0;height:16px\" height=\"16\">&nbsp;</td></tr><tr><td width=\"56.28%\" style=\"width:56.28%;box-sizing:border-box;vertical-align:top\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border-spacing:0px;border-collapse:separate;width:100%;table-layout:fixed\"><tbody><tr><td style=\"padding:25px\"><table align=\"center\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"color:#000;font-style:normal;font-weight:normal;font-size:16px;line-height:1.4;letter-spacing:0;text-align:left;direction:ltr;border-collapse:collapse;font-family:Arial, Helvetica, sans-serif;white-space:normal;word-wrap:break-word;word-break:break-word\"><tbody><tr><td dir=\"ltr\" style=\"color:#feffff;font-size:12px;white-space:pre-wrap;text-align:justify\"><a href=\"tel:012312345678\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#feffff;text-decoration:none\">0123 123 456 78</a><br>h<a href=\"mailto:allo@autoinc.com\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#feffff;text-decoration:none\">allo@autoinc.com</a><br>www.<a href=\"http://autoinc.de\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#feffff;text-decoration:none\">autoinc.de</a><br></td></tr><tr><td style=\"font-size:0;height:16px\" height=\"16\">&nbsp;</td></tr><tr><td dir=\"ltr\" style=\"color:#feffff;font-size:12px;letter-spacing:-0.025em;white-space:pre-wrap;text-align:left\">© 2026 Facundo Muruchi<br></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table><!--<![endif]--></td></tr></tbody></table><!--[if mso]></td>\n                </tr>\n              </tbody>\n            </table>\n          </center><![endif]--></td></tr></tbody></table></body></html>",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        2960,
+        576
+      ],
+      "id": "aa2ec15c-9a3f-40c4-ba70-8bddc75e3470",
+      "name": "Enviar mensaje de rechazo",
+      "webhookId": "6b73a146-8815-43cd-978a-a83412c44be2",
+      "notesInFlow": false,
+      "executeOnce": true,
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "uZ1VZHYzFi3UNg2j",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-flash",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-flash"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "eres un bot en una cadena de automatizacion para mejorar el proceso de seleccion de candidatos para un puesto en especifico de una empresa llamada \"AutoInc\"",
+              "role": "model"
+            },
+            {
+              "content": "=genera un mensaje de rechazo para el participante:  {{ $('datos').item.json.nombre }} {{ $('datos').item.json.apellido }}\n\nse breve. no uses mas de 200 tokens y retorna unicamente el mensaje que será enviado al candidato."
+            }
+          ]
+        },
+        "simplify": false,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1,
+      "position": [
+        2608,
+        576
+      ],
+      "id": "a4ab899f-4907-40ec-ac8b-626d65a26c7c",
+      "name": "generar mensaje de rechazo",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "cP0zHzWVYvzwQOf9",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -784,
+        16
+      ],
+      "id": "64e3c6a4-00e8-4f05-99df-facc1d9537d0",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "cf7744a0-5dfd-4edd-8d92-1a5f20ab62d1",
+              "leftValue": "={{ $('datos').item.json.experiencia }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            },
+            {
+              "id": "6ab1cb41-4157-4421-9587-f3b708822a40",
+              "leftValue": "={{ $('datos').item.json.edad }}",
+              "rightValue": 18,
+              "operator": {
+                "type": "number",
+                "operation": "gte"
+              }
+            },
+            {
+              "id": "06c83b46-c3a3-4d6f-be92-528ce2f9a245",
+              "leftValue": "={{ $('respuesta motivacion').item.json['nivel de motivacion'] }}",
+              "rightValue": 80,
+              "operator": {
+                "type": "number",
+                "operation": "gte"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1936,
+        432
+      ],
+      "id": "301405bc-1a70-476e-86fc-20dbc3fe2073",
+      "name": "verificar edad, experiencia y motivacion",
+      "notesInFlow": false
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "c8ad10d8-f77b-4fd8-90bc-a52ed9dca49c",
+              "name": "nivel de motivacion",
+              "value": "={{ $json.content.parts[0].text }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        16,
+        432
+      ],
+      "id": "39ea4a2f-43d0-4357-a7c6-f5083b80c5bb",
+      "name": "respuesta motivacion"
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1wFuxG9cCrCAGN1SPUL1A1mf9AucL2fU9-ovD6qyyQZI",
+          "mode": "list",
+          "cachedResultName": "rrhh",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1wFuxG9cCrCAGN1SPUL1A1mf9AucL2fU9-ovD6qyyQZI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1395107790,
+          "mode": "list",
+          "cachedResultName": "Rechazados",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1wFuxG9cCrCAGN1SPUL1A1mf9AucL2fU9-ovD6qyyQZI/edit#gid=1395107790"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "NOMBRE": "={{ $('datos').item.json.nombre }}",
+            "APELLIDO": "={{ $('datos').item.json.apellido }}",
+            "EDAD": "={{ $('datos').item.json.edad }}",
+            "CORREO": "={{ $('datos').item.json.correo }}",
+            "EXPERIENCIA": "={{ $('datos').item.json.experiencia }}",
+            "MOTIVACION": "={{ $('respuesta motivacion').item.json['nivel de motivacion'] }}",
+            "FECHA": "={{ $('obtener fecha').item.json.currentDate }}",
+            "MENSAJE": "={{ $('datos').item.json.motivacion }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "NOMBRE",
+              "displayName": "NOMBRE",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "APELLIDO",
+              "displayName": "APELLIDO",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "EDAD",
+              "displayName": "EDAD",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "CORREO",
+              "displayName": "CORREO",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "EXPERIENCIA",
+              "displayName": "EXPERIENCIA",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "MOTIVACION",
+              "displayName": "MOTIVACION",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "MENSAJE",
+              "displayName": "MENSAJE",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "FECHA",
+              "displayName": "FECHA",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        3184,
+        576
+      ],
+      "id": "929c25ce-1dca-400d-b52a-674b5dc3b365",
+      "name": "agregar a hoja de rechazados",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "3ljW0Gjlu6Sgpwy6",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1wFuxG9cCrCAGN1SPUL1A1mf9AucL2fU9-ovD6qyyQZI",
+          "mode": "list",
+          "cachedResultName": "rrhh",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1wFuxG9cCrCAGN1SPUL1A1mf9AucL2fU9-ovD6qyyQZI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Aprobados",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1wFuxG9cCrCAGN1SPUL1A1mf9AucL2fU9-ovD6qyyQZI/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "NOMBRE": "={{ $('datos').item.json.nombre }}",
+            "APELLIDO": "={{ $('datos').item.json.apellido }}",
+            "EDAD": "={{ $('datos').item.json.edad }}",
+            "CORREO": "={{ $('datos').item.json.correo }}",
+            "EXPERIENCIA": "={{ $('datos').item.json.experiencia }}",
+            "MOTIVACION": "={{ $('respuesta motivacion').item.json['nivel de motivacion'] }}",
+            "FECHA": "={{ $('obtener fecha').item.json.currentDate }}",
+            "MENSAJE": "={{ $('datos').item.json.motivacion }}"
+          },
+          "matchingColumns": [
+            "id"
+          ],
+          "schema": [
+            {
+              "id": "NOMBRE",
+              "displayName": "NOMBRE",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "APELLIDO",
+              "displayName": "APELLIDO",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "EDAD",
+              "displayName": "EDAD",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "CORREO",
+              "displayName": "CORREO",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "EXPERIENCIA",
+              "displayName": "EXPERIENCIA",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "MOTIVACION",
+              "displayName": "MOTIVACION",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "MENSAJE",
+              "displayName": "MENSAJE",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "FECHA",
+              "displayName": "FECHA",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        3184,
+        336
+      ],
+      "id": "c1043687-8199-4db4-9e04-271fed249567",
+      "name": "agregar a hoja de aprobados",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "3ljW0Gjlu6Sgpwy6",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 2,
+      "position": [
+        240,
+        432
+      ],
+      "id": "d447a52a-c23b-4d3d-9f6d-89169c4741fb",
+      "name": "obtener fecha",
+      "notesInFlow": false
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-flash",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-flash"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "eres un bot en una cadena de automatizacion para mejorar el proceso de seleccion de candidatos para un puesto en especifico de una empresa llamada \"AutoInc\". La salida de tu respuesta debe ser UNICAMENTE un valor entero entre 0 y 100",
+              "role": "model"
+            },
+            {
+              "content": "=determina del 0 al 100 el nivel de motivacion de este participante segun su mensaje que indica por que esta interesado en el puesto:\n\n\"{{ $json.motivacion }}\""
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1,
+      "position": [
+        -336,
+        432
+      ],
+      "id": "891c66c6-142b-472f-9733-0382923e1a0e",
+      "name": "obtener nivel de motivacion",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "cP0zHzWVYvzwQOf9",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "sendAndWait",
+        "sendTo": "facundomuruchi01@gmail.com",
+        "subject": "(Revisión) Nueva Aplicación de Automatización!",
+        "message": "=🧑 Nombre completo: {{ $('datos').item.json.nombre }} {{ $('datos').item.json.apellido }}\n\n🙌 Edad: {{ $('datos').item.json.edad }}\n\n✉️ Email: {{ $('datos').item.json.correo }}\n\n🔨 Experiencia: {{ $('datos').item.json.experiencia ? \"✅\" : \"❌\" }}\n\n💪 Motivación: {{ $('datos').item.json.motivacion }}\n\n🕒 Fecha de envío: {{ $('obtener fecha').item.json.currentDate }}",
+        "approvalOptions": {
+          "values": {
+            "approvalType": "double"
+          }
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        2160,
+        528
+      ],
+      "id": "97817a2b-230b-4a2c-a771-ee072e403d38",
+      "name": "esperar revision de RRHH",
+      "webhookId": "8d878bd9-2667-4327-9b61-77cf59d63cc3",
+      "executeOnce": true,
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "uZ1VZHYzFi3UNg2j",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-flash",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-flash"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "eres un bot en una cadena de automatizacion para mejorar el proceso de seleccion de candidatos para un puesto en especifico de una empresa llamada \"AutoInc\"",
+              "role": "model"
+            },
+            {
+              "content": "=genera un mensaje de aprobacion para el participante: {{ $('datos').item.json.nombre }} {{ $('datos').item.json.apellido }}, quien pasará a la siguiente etapa. preguntale que horarios tiene disponible durante la semana para programar una primera entrevista.\n\nse breve. no uses mas de 200 tokens y retorna unicamente el mensaje que será enviado al candidato."
+            }
+          ]
+        },
+        "simplify": false,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1,
+      "position": [
+        2608,
+        336
+      ],
+      "id": "1df24c5f-6c0c-4029-89c7-5e79b4784c0e",
+      "name": "generar mensaje de aprobacion",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "cP0zHzWVYvzwQOf9",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sendTo": "={{ $('datos').item.json.correo }}",
+        "subject": "Resultado de Aplicación",
+        "message": "=<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html><head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><link rel=\"preload\" as=\"image\" href=\"{{ $('felicidades').item.json.imagen_felicidades }}\"><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta name=\"format-detection\" content=\"telephone=no, date=no, address=no, email=no\"><meta name=\"x-apple-disable-message-reformatting\"><meta name=\"keywords\" content=\"DAG97z6f7FI, BAFHLt-Bzcs\"><!--[if mso]><div>\n                <noscript>\n                  <xml>\n                    <o:OfficeDocumentSettings>\n                      <o:AllowPNG/>\n                      <o:PixelsPerInch>96</o:PixelsPerInch>\n                    </o:OfficeDocumentSettings>\n                  </xml>\n                </noscript></div><![endif]--><!--[if !mso]><!--><style>@media (max-width: 450px) {\n        .layout-0 {\n          display: none !important;\n        }\n      }\n@media (max-width: 450px) and (min-width: 0px) {\n        .layout-0-under-450 {\n          display: table !important;\n        }\n      }</style><!--<![endif]--></head><body style=\"width:100%;-webkit-text-size-adjust:100%;text-size-adjust:100%;background-color:#f0f1f5;margin:0;padding:0\"><table width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" bgcolor=\"#f0f1f5\" style=\"background-color:#f0f1f5\"><tbody><tr><td style=\"background-color:#f0f1f5\"><!--[if mso]><center>\n                    <table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"600\">\n                      <tbody>\n                        <tr>\n                          <td><![endif]--><table align=\"center\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"max-width:600px;min-height:600px;margin:0 auto;background-color:#feffff\"><tbody><tr><td style=\"vertical-align:top\"></td></tr><tr><td style=\"vertical-align:top;padding:10px\n           0px\n           0px\n           0px\"><table align=\"center\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\"><tbody><tr><td style=\"padding:10px 0 10px 0;vertical-align:top\"><table align=\"center\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"color:#000;font-style:normal;font-weight:normal;font-size:16px;line-height:1.4;letter-spacing:0;text-align:left;direction:ltr;border-collapse:collapse;font-family:Arial, Helvetica, sans-serif;white-space:normal;word-wrap:break-word;word-break:break-word\"><tbody><tr><td><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:100%\"><tbody><tr><td align=\"center\"><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:100%;max-width:600px\"><tbody><tr><td style=\"width:100%;padding:0\"><img src=\"{{ $('felicidades').item.json.imagen_felicidades }}\" width=\"600\" height=\"630\" style=\"display:block;width:100%;height:auto;max-width:100%\"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td style=\"font-size:0;height:16px\" height=\"16\">&nbsp;</td></tr><tr><td dir=\"ltr\" style=\"font-size:16px;white-space:pre-wrap;text-align:left;padding:0px 20px\">{{ $('mensaje').item.json.mensaje_aprobacion }}\n<br></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td height=\"100%\" style=\"height:100%;font-size:0;line-height:0\" aria-hidden=\"true\">&nbsp;</td></tr><tr><td style=\"vertical-align:top\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"layout-0\" align=\"center\" style=\"display:table;border-spacing:0px;border-collapse:separate;width:100%;max-width:100%;table-layout:fixed;margin:0 auto;background-color:#000000\"><tbody><tr><td style=\"text-align:center;padding:24.5px 0px\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border-spacing:0px;border-collapse:separate;width:100%;max-width:600px;table-layout:fixed;margin:0 auto\"><tbody><tr><td width=\"40.71%\" style=\"width:40.71%;box-sizing:border-box;vertical-align:top\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border-spacing:0px;border-collapse:separate;width:100%;table-layout:fixed\"><tbody><tr><td style=\"padding:25px\"><table align=\"center\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"color:#000;font-style:normal;font-weight:normal;font-size:16px;line-height:1.4;letter-spacing:0;text-align:left;direction:ltr;border-collapse:collapse;font-family:Arial, Helvetica, sans-serif;white-space:normal;word-wrap:break-word;word-break:break-word\"><tbody><tr><td dir=\"ltr\" style=\"color:#feffff;font-size:17.3334px;font-weight:700;white-space:pre-wrap;text-align:left\">AUTO INC.<br></td></tr></tbody></table></td></tr></tbody></table></td><td width=\"16\" style=\"width:16px;box-sizing:border-box;font-size:0\">&nbsp;</td><td width=\"56.62%\" style=\"width:56.62%;box-sizing:border-box;vertical-align:top\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border-spacing:0px;border-collapse:separate;width:100%;table-layout:fixed\"><tbody><tr><td style=\"padding:25px\"><table align=\"center\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"color:#000;font-style:normal;font-weight:normal;font-size:16px;line-height:1.4;letter-spacing:0;text-align:left;direction:ltr;border-collapse:collapse;font-family:Arial, Helvetica, sans-serif;white-space:normal;word-wrap:break-word;word-break:break-word\"><tbody><tr><td dir=\"ltr\" style=\"color:#feffff;font-size:12px;white-space:pre-wrap;text-align:justify\"><a href=\"tel:012312345678\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#feffff;text-decoration:none\">0123 123 456 78</a><br>h<a href=\"mailto:allo@autoinc.com\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#feffff;text-decoration:none\">allo@autoinc.com</a><br>www.<a href=\"http://autoinc.de\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#feffff;text-decoration:none\">autoinc.de</a><br></td></tr><tr><td style=\"font-size:0;height:16px\" height=\"16\">&nbsp;</td></tr><tr><td dir=\"ltr\" style=\"color:#feffff;font-size:12px;letter-spacing:-0.025em;white-space:pre-wrap;text-align:left\">© 2026 Facundo Muruchi<br></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table><!--[if !mso]><!--><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"layout-0-under-450\" align=\"center\" style=\"display:none;border-spacing:0px;border-collapse:separate;width:100%;max-width:100%;table-layout:fixed;margin:0 auto;background-color:#000000\"><tbody><tr><td style=\"text-align:center;padding:24.5px 0px\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border-spacing:0px;border-collapse:separate;width:100%;max-width:490px;table-layout:fixed;margin:0 auto\"><tbody><tr><td width=\"40.46%\" style=\"width:40.46%;box-sizing:border-box;vertical-align:top\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border-spacing:0px;border-collapse:separate;width:100%;table-layout:fixed\"><tbody><tr><td style=\"padding:25px\"><table align=\"center\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"color:#000;font-style:normal;font-weight:normal;font-size:16px;line-height:1.4;letter-spacing:0;text-align:left;direction:ltr;border-collapse:collapse;font-family:Arial, Helvetica, sans-serif;white-space:normal;word-wrap:break-word;word-break:break-word\"><tbody><tr><td dir=\"ltr\" style=\"color:#feffff;font-size:17.3334px;font-weight:700;white-space:pre-wrap;text-align:left\">AUTO INC.<br></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td style=\"font-size:0;height:16px\" height=\"16\">&nbsp;</td></tr><tr><td width=\"56.28%\" style=\"width:56.28%;box-sizing:border-box;vertical-align:top\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border-spacing:0px;border-collapse:separate;width:100%;table-layout:fixed\"><tbody><tr><td style=\"padding:25px\"><table align=\"center\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"color:#000;font-style:normal;font-weight:normal;font-size:16px;line-height:1.4;letter-spacing:0;text-align:left;direction:ltr;border-collapse:collapse;font-family:Arial, Helvetica, sans-serif;white-space:normal;word-wrap:break-word;word-break:break-word\"><tbody><tr><td dir=\"ltr\" style=\"color:#feffff;font-size:12px;white-space:pre-wrap;text-align:justify\"><a href=\"tel:012312345678\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#feffff;text-decoration:none\">0123 123 456 78</a><br>h<a href=\"mailto:allo@autoinc.com\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#feffff;text-decoration:none\">allo@autoinc.com</a><br>www.<a href=\"http://autoinc.de\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#feffff;text-decoration:none\">autoinc.de</a><br></td></tr><tr><td style=\"font-size:0;height:16px\" height=\"16\">&nbsp;</td></tr><tr><td dir=\"ltr\" style=\"color:#feffff;font-size:12px;letter-spacing:-0.025em;white-space:pre-wrap;text-align:left\">© 2026 Facundo Muruchi<br></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table><!--<![endif]--></td></tr></tbody></table><!--[if mso]></td>\n                </tr>\n              </tbody>\n            </table>\n          </center><![endif]--></td></tr></tbody></table></body></html>",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        3408,
+        336
+      ],
+      "id": "86d94a19-7d1e-45df-aca7-3d8bc16931ea",
+      "name": "Enviar mensaje de aprobacion y esperar disponibilidad",
+      "webhookId": "6b73a146-8815-43cd-978a-a83412c44be2",
+      "notesInFlow": false,
+      "executeOnce": true,
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "uZ1VZHYzFi3UNg2j",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "f015d45d-f28b-4de9-a3e6-fedb20d05b2e",
+              "name": "nombre",
+              "value": "={{ $json['¿Cuál es tu nombre?'] }}",
+              "type": "string"
+            },
+            {
+              "id": "03d7043e-661a-4138-9f1a-251d00996452",
+              "name": "apellido",
+              "value": "={{ $json['¿Y tu apellido?'] }}",
+              "type": "string"
+            },
+            {
+              "id": "f072905b-512e-4366-aee4-fa898dc3d249",
+              "name": "edad",
+              "value": "={{ $json['¿Cuál es tu edad?'] }}",
+              "type": "number"
+            },
+            {
+              "id": "712ddfc7-8434-4fa9-a72d-992f5efe4a03",
+              "name": "correo",
+              "value": "={{ $json['¿Cuál es el correo electrónico que más usas?'] }}",
+              "type": "string"
+            },
+            {
+              "id": "1263acc3-2b58-445d-ba30-7ea79ad67707",
+              "name": "experiencia",
+              "value": "={{ $json['¿Tienes experiencia automatizando procesos?'] }}",
+              "type": "boolean"
+            },
+            {
+              "id": "6aab76b1-9395-4578-809f-bc70ef83cdbc",
+              "name": "motivacion",
+              "value": "={{ $json['¿Por qué estás interesado en el puesto?'] }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -560,
+        432
+      ],
+      "id": "4b18da16-ed30-4458-b9be-783629b0c4f0",
+      "name": "datos"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "bb702ad2-7bb4-468e-b3d6-13a62ede3d77",
+              "leftValue": "={{ $json.data.approved }}",
+              "rightValue": false,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        2384,
+        528
+      ],
+      "id": "bfca9d5f-0366-49a5-a928-819affc1fb86",
+      "name": "aprobado o rechazado"
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "bucketName": "fmuruchi-hhrr-automation",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.awsS3",
+      "typeVersion": 2,
+      "position": [
+        464,
+        432
+      ],
+      "id": "4b965d3a-5db8-4bcd-9692-53d15aef54b4",
+      "name": "obtener imagenes",
+      "credentials": {
+        "aws": {
+          "id": "c7uNmslfVbcT1qVy",
+          "name": "AWS (IAM) account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "0785fbe9-440b-4cb4-9296-c27ce1b4d71e",
+              "name": "imagen_recibido",
+              "value": "=https://fmuruchi-hhrr-automation.s3.us-east-1.amazonaws.com/{{ $json.Key }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        912,
+        240
+      ],
+      "id": "ef4e8e25-0799-4bf1-a12e-117e806e5a38",
+      "name": "recibido"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "0785fbe9-440b-4cb4-9296-c27ce1b4d71e",
+              "name": "imagen_felicidades",
+              "value": "=https://fmuruchi-hhrr-automation.s3.us-east-1.amazonaws.com/{{ $json.Key }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        912,
+        432
+      ],
+      "id": "dbc5b3c9-ac1a-4c39-92a8-46952df8bd5c",
+      "name": "felicidades"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "0785fbe9-440b-4cb4-9296-c27ce1b4d71e",
+              "name": "imagen_rechazo",
+              "value": "=https://fmuruchi-hhrr-automation.s3.us-east-1.amazonaws.com/{{ $json.Key }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        912,
+        624
+      ],
+      "id": "cfe5425e-d3a0-4e59-a189-48568058e9e4",
+      "name": "rechazo"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.Key }}",
+                    "rightValue": "autoinc_logo_recibido.png",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "c8d8e878-c82e-4079-bf95-a0af9b45f00b"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "recibido"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "189c28ea-5fe1-4a5c-8197-b8ebacdb95a9",
+                    "leftValue": "={{ $json.Key }}",
+                    "rightValue": "autoinc_logo_felicidades.png",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "felicidades"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "41983f1d-ba8b-4801-937f-232dd517f620",
+                    "leftValue": "={{ $json.Key }}",
+                    "rightValue": "autoinc_logo_rechazo.png",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "rechazo"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.3,
+      "position": [
+        688,
+        416
+      ],
+      "id": "4af7a508-1846-4e1a-9033-89d754a36dd9",
+      "name": "separar imagenes"
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineByPosition",
+        "numberInputs": 3,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        1136,
+        416
+      ],
+      "id": "13eba9db-6d1e-4156-80d9-947467dd547e",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-flash",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-flash"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "eres un bot en una cadena de automatizacion para mejorar el proceso de seleccion de candidatos para un puesto en especifico de una empresa llamada \"AutoInc\"",
+              "role": "model"
+            },
+            {
+              "content": "=genera un mensaje de recepcion para el participante: {{ $('datos').item.json.nombre }} {{ $('datos').item.json.apellido }}, quien deberá esperar a que el equipo de RRHH revise su postulacion.\n\nse breve. no uses mas de 200 tokens y retorna unicamente el mensaje que será enviado al candidato."
+            }
+          ]
+        },
+        "simplify": false,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1,
+      "position": [
+        1360,
+        432
+      ],
+      "id": "d31945c7-352e-4d42-a201-df27cd91db3d",
+      "name": "generar mensaje de recepcion",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "cP0zHzWVYvzwQOf9",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "61f8f0ee-2e5a-4b37-b4a4-2c498fcaec0a",
+              "name": "mensaje_aprobacion",
+              "value": "={{ $json.candidates[0].content.parts[0].text }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        2960,
+        336
+      ],
+      "id": "200e8cef-7873-429b-a98d-4921e6164e50",
+      "name": "mensaje"
+    }
+  ],
+  "pinData": {
+    "When clicking ‘Execute workflow’": [
+      {
+        "json": {
+          "¿Cuál es tu nombre?": "Mariano",
+          "¿Y tu apellido?": "Gutierrez",
+          "¿Cuál es tu edad?": 30,
+          "¿Cuál es el correo electrónico que más usas?": "fmuruchiprueban8n1@yopmail.com",
+          "¿Tienes experiencia automatizando procesos?": true,
+          "¿Por qué estás interesado en el puesto?": "estoy muy interesado en el puesto y tengo muchas ganas de aprender y aplicar mis conocimientos"
+        }
+      }
+    ]
+  },
+  "connections": {
+    "Obtener datos": {
+      "main": [
+        [
+          {
+            "node": "datos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "generar mensaje de rechazo": {
+      "main": [
+        [
+          {
+            "node": "Enviar mensaje de rechazo",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "enviar info a RRHH": {
+      "main": [
+        [
+          {
+            "node": "generar mensaje de aprobacion",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "enviar recibido a aplicante": {
+      "main": [
+        [
+          {
+            "node": "verificar edad, experiencia y motivacion",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Enviar mensaje de rechazo": {
+      "main": [
+        [
+          {
+            "node": "agregar a hoja de rechazados",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        []
+      ]
+    },
+    "verificar edad, experiencia y motivacion": {
+      "main": [
+        [
+          {
+            "node": "enviar info a RRHH",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "esperar revision de RRHH",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "respuesta motivacion": {
+      "main": [
+        [
+          {
+            "node": "obtener fecha",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "obtener fecha": {
+      "main": [
+        [
+          {
+            "node": "obtener imagenes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "obtener nivel de motivacion": {
+      "main": [
+        [
+          {
+            "node": "respuesta motivacion",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "esperar revision de RRHH": {
+      "main": [
+        [
+          {
+            "node": "aprobado o rechazado",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "generar mensaje de aprobacion": {
+      "main": [
+        [
+          {
+            "node": "mensaje",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Enviar mensaje de aprobacion y esperar disponibilidad": {
+      "main": [
+        []
+      ]
+    },
+    "agregar a hoja de aprobados": {
+      "main": [
+        [
+          {
+            "node": "Enviar mensaje de aprobacion y esperar disponibilidad",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "datos": {
+      "main": [
+        [
+          {
+            "node": "obtener nivel de motivacion",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "aprobado o rechazado": {
+      "main": [
+        [
+          {
+            "node": "generar mensaje de aprobacion",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "generar mensaje de rechazo",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "obtener imagenes": {
+      "main": [
+        [
+          {
+            "node": "separar imagenes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "recibido": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "separar imagenes": {
+      "main": [
+        [
+          {
+            "node": "recibido",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "felicidades",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "rechazo",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "felicidades": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "rechazo": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 2
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "generar mensaje de recepcion",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "generar mensaje de recepcion": {
+      "main": [
+        [
+          {
+            "node": "enviar recibido a aplicante",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "mensaje": {
+      "main": [
+        [
+          {
+            "node": "agregar a hoja de aprobados",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "9aec44e5-9321-4170-8021-10b9d2a33577",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "bdcfa5caa08592208ee4756803df43dd3d66e092920239ad55249b1da063aedc"
+  },
+  "id": "xKKOEm9tJwH9uocd",
+  "tags": []
+}

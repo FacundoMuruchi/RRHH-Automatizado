@@ -1,64 +1,195 @@
-# 📄 Automatización de RRHH
+# HR Applicant Management Automation – Reproducible Tests
 
-### **Caso elegido**
+Este documento describe **cómo ejecutar pruebas reproducibles** del workflow de automatización de gestión de candidatos desarrollado con **n8n**.
 
-Automatización del proceso de recepción, evaluación y respuesta a
-postulaciones laborales.
+El objetivo es permitir que cualquier persona (reclutador técnico, docente o reviewer) pueda **levantar el entorno, ejecutar el flujo y validar su funcionamiento end-to-end**.
 
-------------------------------------------------------------------------
+---
 
-### **Workflow (trigger)**
+## 1. Requisitos previos
 
-El workflow se activa mediante el nodo **Webhook -- "obtener datos de
-typeform"**, que recibe las respuestas enviadas desde un formulario
-Typeform.
+Antes de comenzar, asegurate de contar con lo siguiente:
 
-------------------------------------------------------------------------
+* **Docker** y **Docker Compose** instalados
+* **Cuenta de n8n** (local, self-hosted)
+* **Cuenta de Google** con acceso a:
 
-### **Descripción de cada nodo**
+  * Google Sheets
+  * Gmail API habilitada
+* **Cuenta de AWS** con:
 
--   **obtener datos de typeform (Webhook):** recibe los datos del
-    formulario (nombre, apellido, edad, email, experiencia). Es el punto
-    de inicio del flujo.
+  * Bucket S3 creado
+  * Acceso público de lectura a los assets de imágenes
+* **Cuenta de Google Gemini** (API Key)
 
--   **verificar edad y experiencia (IF):** evalúa si el postulante marcó
-    que tiene experiencia (boolean) y si su edad es mayor a 18.
+---
 
--   **Enviar mensaje de rechazo:** si el IF falla, se envía un email
-    automático informando que no fue seleccionado.
+## 2. Levantar n8n en local
 
--   **enviar recibido a aplicante:** si el IF pasa, se envía un correo
-    confirmando que su aplicación fue recibida correctamente.
+Ejecutar n8n usando Docker:
 
--   **obtener fecha y hora (HTTP Request):** consulta la WorldTimeAPI
-    para obtener la fecha y hora actual de Buenos Aires. Incluye
-    reintentos en caso de fallo.
+```bash
+docker run -it --rm \
+  -p 5678:5678 \
+  -v ~/.n8n:/home/node/.n8n \
+  n8nio/n8n
+```
 
--   **formatear fecha (Date & Time):** convierte la fecha recibida a
-    formato `dd/MM/yyyy` para usarla en la notificación interna.
+Acceder desde el navegador:
 
--   **Merge:** combina los datos del formulario con la fecha formateada
-    para generar un único objeto.
+```
+http://localhost:5678
+```
 
--   **enviar info a RRHH:** envía un correo interno con los datos del
-    postulante (nombre, edad, email, experiencia y fecha de envío).
+### 2.1 Exponer n8n con ngrok
 
-------------------------------------------------------------------------
+Ejecutar ngrok apuntando al puerto de n8n:
+```bash
+ngrok http 5678
+```
+ngrok generará una URL pública similar a:
+```bash
+https://abcd-123-45-67.ngrok-free.app
+```
+Esta URL debe configurarse en Typeform Webhooks como endpoint del trigger de n8n.
 
-### **Qué evalúa el if**
+---
 
-El nodo **IF** verifica: 1. **Experiencia = true** 2. **Edad \> 18**
+## 3. Importar el workflow
 
-Esto asegura que solo candidatos que cumplen requisitos mínimos reciban
-confirmación y sean reportados a RRHH, mientras que quienes no califican
-reciben una notificación de rechazo.
+1. Abrir n8n
+2. Ir a **Import workflow**
+3. Importar el archivo:
 
-------------------------------------------------------------------------
+```
+RRHH_automatizado.json
+```
 
-### **Notificación**
+4. Verificar que todos los nodos estén correctamente conectados
 
--   Los correos se envían mediante nodos **Gmail**.
--   El email al postulante cambia según el resultado del IF
-    (confirmación o rechazo).
--   La notificación interna combina datos del formulario con la fecha
-    formateada.
+---
+
+## 4. Configuración de credenciales
+
+### 4.1 Google Sheets
+
+* Crear una credencial de **Google Sheets OAuth2**
+* Compartir la planilla con el mail del service account
+
+La planilla debe contener al menos dos hojas:
+
+* `Aprobados`
+* `Rechazados`
+
+---
+
+### 4.2 Gmail
+
+* Configurar **Gmail OAuth2**
+* Autorizar el envío de correos
+
+---
+
+### 4.3 AWS S3
+
+* Configurar credenciales AWS en n8n
+* El bucket debe contener imágenes como:
+
+```
+autoinc_logo_recibido.png
+autoinc_logo_felicidades.png
+autoinc_logo_rechazo.png
+```
+
+Los objetos deben ser accesibles públicamente por URL.
+
+---
+
+### 4.4 Google Gemini
+
+* Crear credencial con **API Key**
+* Limitar el modelo a respuestas determinísticas
+
+---
+
+## 5. Datos de prueba
+
+Para ejecutar pruebas reproducibles, usar siempre valores controlados.
+
+### Ejemplo de candidato (aprobado)
+
+```
+Nombre: Juan
+Apellido: Pérez
+Edad: 25
+Email: juan.perez@test.com
+Experiencia: Sí
+Motivación: "Tengo experiencia en automatización y muchas ganas de crecer"
+```
+
+### Ejemplo de candidato (rechazado)
+
+```
+Nombre: Ana
+Apellido: Gómez
+Edad: 19
+Email: ana.gomez@test.com
+Experiencia: No
+Motivación: "Quiero plata"
+```
+
+---
+
+## 6. Ejecución de la prueba
+
+1. Disparar el workflow desde el **Typeform Trigger** (modo test)
+
+2. Verificar:
+
+   * Score de motivación generado
+   * Selección correcta de imagen desde S3
+   * Envío de email de recepción
+
+3. En caso de candidato válido:
+
+   * Se envía mail de aprobación a RRHH
+   * RRHH responde **Approve / Reject**
+
+4. Verificar resultado:
+
+   * Registro agregado en Google Sheets
+   * Email final enviado al candidato
+
+---
+
+## 7. Validaciones esperadas
+
+| Escenario          | Resultado esperado      |
+| ------------------ | ----------------------- |
+| Edad < 18          | Revisión                |
+| Sin experiencia    | Revisión                |
+| Motivación < 80    | Revisión                |
+| Aprobado por RRHH  | Email + hoja Aprobados  |
+| Rechazado por RRHH | Email + hoja Rechazados |
+
+---
+
+## 8. Reproducibilidad
+
+Para garantizar resultados reproducibles:
+
+* Usar siempre los mismos textos de motivación
+* Ejecutar en modo manual
+* No modificar prompts de IA entre pruebas
+* Limpiar Google Sheets antes de cada corrida
+
+---
+
+## 9. Notas finales
+
+Este workflow está diseñado como **prototipo funcional realista**, aplicando buenas prácticas de:
+
+* Automatización
+* Integración con IA
+* Human-in-the-loop
+* Separación de responsabilidades

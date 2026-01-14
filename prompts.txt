@@ -1,0 +1,31 @@
+determina del 0 al 100 el nivel de motivacion de este participante segun su mensaje que indica por que esta interesado en el puesto:
+
+"{{ $json.motivacion }}"
+
+
+
+
+
+
+genera un mensaje de recepcion para el participante: {{ $('datos').item.json.nombre }} {{ $('datos').item.json.apellido }}, quien deberá esperar a que el equipo de RRHH revise su postulacion.
+
+se breve. no uses mas de 200 tokens y retorna unicamente el mensaje que será enviado al candidato.
+
+
+
+
+
+
+genera un mensaje de aprobacion para el participante: {{ $('datos').item.json.nombre }} {{ $('datos').item.json.apellido }}, quien pasará a la siguiente etapa. preguntale que horarios tiene disponible durante la semana para programar una primera entrevista.
+
+se breve. no uses mas de 200 tokens y retorna unicamente el mensaje que será enviado al candidato.
+
+
+
+
+
+
+
+genera un mensaje de rechazo para el participante:  {{ $('datos').item.json.nombre }} {{ $('datos').item.json.apellido }}
+
+se breve. no uses mas de 200 tokens y retorna unicamente el mensaje que será enviado al candidato.
