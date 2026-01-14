@@ -51,7 +51,26 @@ ngrok generará una URL pública similar a:
 ```bash
 https://abcd-123-45-67.ngrok-free.app
 ```
-Esta URL debe configurarse en Typeform Webhooks como endpoint del trigger de n8n.
+Esta URL debe configurarse en un archivo .yaml para comunicar Typeform con n8n local expuesto con ngrok.
+
+```yaml
+version: "3.8"
+
+services:
+  n8n:
+    image: n8nio/n8n
+    container_name: n8n
+    ports:
+      - "5678:5678"
+    environment:
+      - WEBHOOK_URL=URL_NGROK
+    volumes:
+      - NOMBRE_VOLUMEN:/home/node/.n8n
+
+volumes:
+  n8n_data:
+    external: true
+```
 
 ---
 
